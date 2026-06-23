@@ -1,4 +1,4 @@
-// public/assets/js/seat_selector.js
+1// public/assets/js/seat_selector.js
 
 document.addEventListener('DOMContentLoaded', () => {
 
