@@ -9,6 +9,7 @@ namespace CinemaXNet.Controllers;
 [Route("admin/promotions")]
 public class AdminPromotionsController(IDbConnection db) : Controller
 {
+    //hàm gọi very
     [HttpGet]
     public async Task<IActionResult> Index()
     {
@@ -27,8 +28,7 @@ public class AdminPromotionsController(IDbConnection db) : Controller
             await db.ExecuteAsync(sql, new { Code = code, Title = title, Description = description, DiscountPercent = discountPercent, ValidFrom = validFrom, ValidTo = validTo, IsActive = isActive });
             TempData["Success"] = "Thêm khuyến mãi thành công!";
         }
-        catch (Exception ex)
-        {
+        catch (Exception ex)        {
             TempData["Error"] = "Lỗi: " + ex.Message;
         }
         return RedirectToAction(nameof(Index));

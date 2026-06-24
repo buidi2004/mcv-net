@@ -235,7 +235,7 @@ public static class DatabaseInitializer
         db.Execute("""
             INSERT INTO users (username, email, password_hash, role, full_name)
             VALUES ('admin', 'admin@cinemax.com',
-                    '$2a$11$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+                    '$2a$11$wF4D9QmiuiEVd6hT1Xn/Q.y.Qi5MYycDJd7kjs7SRWJe9Jlibo4gi',
                     'admin', 'Quản trị viên');
         """);
 
@@ -243,7 +243,7 @@ public static class DatabaseInitializer
         db.Execute("""
             INSERT INTO users (username, email, password_hash, role, full_name, city, member_level)
             VALUES ('user1', 'user@cinemax.com',
-                    '$2a$11$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+                    '$2a$11$wF4D9QmiuiEVd6hT1Xn/Q.y.Qi5MYycDJd7kjs7SRWJe9Jlibo4gi',
                     'user', 'Nguyễn Văn A', 'Hà Nội', 'bronze');
         """);
 
@@ -251,7 +251,7 @@ public static class DatabaseInitializer
         db.Execute("""
             INSERT INTO users (username, email, password_hash, role, full_name)
             VALUES ('manager1', 'manager@cinemax.com',
-                    '$2a$11$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+                    '$2a$11$wF4D9QmiuiEVd6hT1Xn/Q.y.Qi5MYycDJd7kjs7SRWJe9Jlibo4gi',
                     'cinema_manager', 'Quản lý rạp');
         """);
 
@@ -259,7 +259,7 @@ public static class DatabaseInitializer
         db.Execute("""
             INSERT INTO users (username, email, password_hash, role, full_name)
             VALUES ('staff1', 'staff@cinemax.com',
-                    '$2a$11$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy',
+                    '$2a$11$wF4D9QmiuiEVd6hT1Xn/Q.y.Qi5MYycDJd7kjs7SRWJe9Jlibo4gi',
                     'staff', 'Nhân viên bán vé');
         """);
 
